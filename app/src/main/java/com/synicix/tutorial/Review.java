@@ -7,17 +7,17 @@ import android.view.MenuItem;
 
 
 public class Review extends ActionBarActivity {
+    TouchImageView img1, img2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review);
 
-        TouchImageView img = new TouchImageView(this);
-        img.setImageResource(R.drawable.perspective_chart);
-        img.setMaxZoom(4f);
-        setContentView(img);
+        getSupportActionBar().hide();
+
     }
+
 
 
     @Override
