@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:background="#202020">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Psychology Review"
+        android:layout_gravity="center"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            >
+
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Quiz"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:id="@+id/buttonQuiz"
+                android:background="#202020"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Review"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:background="#202020"
+                android:id="@+id/buttonReview"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
