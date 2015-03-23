@@ -62,6 +62,8 @@ public class Quiz extends ActionBarActivity {
         answers = new ArrayList<String>();
         hints = new ArrayList<String>();
         hintPics = new ArrayList();
+
+        toast = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG);
     }
 
     public void setOnClickListeners()
