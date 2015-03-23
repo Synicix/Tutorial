@@ -28,8 +28,7 @@
             android:layout_centerVertical="true"
             android:gravity="center"
             android:layout_gravity="center"
-            android:baselineAligned="false"
-            >
+            android:baselineAligned="false">
 
 
 

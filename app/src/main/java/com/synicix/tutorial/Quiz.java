@@ -25,6 +25,7 @@ public class Quiz extends ActionBarActivity {
     ImageView hintImage;
     Button next, hint, submit;
     EditText answerEditText;
+    Toast toast;
     int index;
 
     @Override
@@ -82,16 +83,15 @@ public class Quiz extends ActionBarActivity {
                     questionNum.setText("Question " + (index + 1));
                     questionTextView.setText(questions.get(index));
                 }
-
-
+                toast.cancel();
             }
         });
 
         hint.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0)
             {
-                Toast.makeText(getApplicationContext(), hints.get(index),Toast.LENGTH_LONG).show();
-
+                toast = Toast.makeText(getApplicationContext(), hints.get(index), Toast.LENGTH_LONG);
+                toast.show();
             }
         });
 
@@ -100,12 +100,12 @@ public class Quiz extends ActionBarActivity {
             {
                 if(answerEditText.getText().toString().equals(answers.get(index)))
                 {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getApplicationContext(), "Correct!", Toast.LENGTH_SHORT);
                     toast.show();
                 }
                 else
                 {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Wrong!", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getApplicationContext(), "Wrong!", Toast.LENGTH_SHORT);
                     toast.show();
                 }
 
