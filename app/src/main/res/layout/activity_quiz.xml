@@ -25,7 +25,6 @@
                 android:layout_height="wrap_content"
                 android:text="Question 1"
                 android:textSize="40dp"
-                android:layout_weight="1"
                 android:textColor="#ffffff"
                 android:id="@+id/questionNumberTextView"
                 android:layout_gravity="center_horizontal" />

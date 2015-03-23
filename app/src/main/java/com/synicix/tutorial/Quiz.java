@@ -47,6 +47,12 @@ public class Quiz extends ActionBarActivity {
         index = 0;
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        toast.cancel();
+    }
+
     public void defineWidgets()
     {
         questionNum = (TextView) findViewById(R.id.questionNumberTextView);
